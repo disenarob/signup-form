@@ -9,17 +9,36 @@ body{
     background: rgb(255, 255, 255);
     height:100%;
     text-align:center;
-    padding-top:25vh;
+    padding-top:20vh;
     background-image: url(pizza.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.right{
-    flex-basis:67%;
-    float: right;
-    background: rgb(133, 26, 26);
-    height:100%;
+.logo-container{
+    background:rgb(0, 0, 0, 0.5);
 }
 h1{
     color:#fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.right{
+    flex-basis:67%;
+    float: right;
+    height:100%;
+    --top: 35vh;
+    --bottom: 25vh;
+    --main: calc(100vh - calc(var(--top) + var(--bottom)));
+}
+.top{
+    height: var(--top);
+    background: green;
+}
+.main{
+    height: var(--main);
+}
+.bottom{
+    height: var(--bottom);
+    background: red;
 }
