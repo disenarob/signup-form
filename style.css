@@ -1,0 +1,25 @@
+body{
+    display:flex;
+    margin:0;
+    height:100vh;
+}
+.left{
+    flex-basis:37%;
+    float:left;
+    background: rgb(255, 255, 255);
+    height:100%;
+    text-align:center;
+    padding-top:25vh;
+    background-image: url(pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.right{
+    flex-basis:67%;
+    float: right;
+    background: rgb(133, 26, 26);
+    height:100%;
+}
+h1{
+    color:#fff;
+}
